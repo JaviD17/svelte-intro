@@ -3,7 +3,7 @@
 </script>
 
 <div class="title">
-	<img src="/profile.jpg" alt="profile pic" height="10%" width="10%" />
+	<!-- <img src="/profile.jpg" alt="profile pic" height="20%" width="20%" /> -->
 	<h1>{title}</h1>
 </div>
 
@@ -12,9 +12,9 @@
 		display: flex;
 	}
 
-	.title img {
+	/* .title img {
 		display: inline-block;
-	}
+	} */
 
 	.title h1 {
 		margin-left: 10px;

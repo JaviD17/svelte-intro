@@ -1,6 +1,4 @@
 <script>
-	import Title from '$lib/title.svelte';
-
 	// let title = 'ReFlow';
 
 	// const updateTitle = () => {
@@ -11,8 +9,6 @@
 <svelte:head>
 	<title>ReFlow</title>
 </svelte:head>
-
-<Title />
 
 <div class="index">
 	<p>
