@@ -1,5 +1,8 @@
 <script>
+	import Title from '$lib/title.svelte';
 </script>
+
+<Title title="About Javi"/>
 
 <div class="about">
 	<h2>About</h2>
@@ -15,15 +18,15 @@
 		Donec pretium vulputate sapien nec. Commodo viverra maecenas accumsan lacus vel facilisis.
 	</p>
 
-    <a href="/guides">View guides</a>
+	<a href="/guides">View guides</a>
 
-    <a href="/">Home</a>
+	<a href="/">Home</a>
 </div>
 
 <style>
-    .about {
-        text-align: center;
-        display: block;
-        margin: 20px auto;
-    }
+	.about {
+		text-align: center;
+		display: block;
+		margin: 20px auto;
+	}
 </style>

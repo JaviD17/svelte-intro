@@ -1,5 +1,7 @@
 <script>
-	let title = 'ReFlow';
+	import Title from '$lib/title.svelte';
+
+	// let title = 'ReFlow';
 
 	// const updateTitle = () => {
 	// 	title = 'ReFlow 2.0';
@@ -10,8 +12,9 @@
 	<title>ReFlow</title>
 </svelte:head>
 
+<Title />
+
 <div class="index">
-	<h2>{title}</h2>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis. Libero volutpat sed cras
@@ -24,12 +27,12 @@
 		Donec pretium vulputate sapien nec. Commodo viverra maecenas accumsan lacus vel facilisis.
 	</p>
 
-    <!-- <button on:click={updateTitle}>Change Title</button>
+	<!-- <button on:click={updateTitle}>Change Title</button>
 
     <input type='text' bind:value={title}> -->
 
-    <a href="/guides">View guides</a>
-    <a href="/about">About</a>
+	<a href="/guides">View guides</a>
+	<a href="/about">About</a>
 </div>
 
 <style>
