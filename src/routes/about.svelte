@@ -1,17 +1,8 @@
 <script>
-	let title = 'ReFlow';
-
-	// const updateTitle = () => {
-	// 	title = 'ReFlow 2.0';
-	// };
 </script>
 
-<svelte:head>
-	<title>ReFlow</title>
-</svelte:head>
-
-<div class="index">
-	<h2>{title}</h2>
+<div class="about">
+	<h2>About</h2>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis. Libero volutpat sed cras
@@ -24,18 +15,15 @@
 		Donec pretium vulputate sapien nec. Commodo viverra maecenas accumsan lacus vel facilisis.
 	</p>
 
-    <!-- <button on:click={updateTitle}>Change Title</button>
-
-    <input type='text' bind:value={title}> -->
-
     <a href="/guides">View guides</a>
-    <a href="/about">About</a>
+
+    <a href="/">Home</a>
 </div>
 
 <style>
-	.index {
-		text-align: center;
-		display: block;
-		margin: 20px auto;
-	}
+    .about {
+        text-align: center;
+        display: block;
+        margin: 20px auto;
+    }
 </style>
