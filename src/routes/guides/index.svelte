@@ -1,7 +1,36 @@
+<script context="module">
+	export async function load({ fetch }) {
+		// fetch data with context object
+		const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+		const guides = await res.json();
+		// console.log(guides);
+
+		if (res.ok) {
+			return {
+				props: {
+					guides: guides
+				}
+			}
+		}
+
+		return {
+			status: res.status,
+			error: new Error('Could not fetch the guides')
+		}
+	}
+</script>
+
+<script>
+	export let guides
+</script>
+
 <div class="guides">
 	<ul>
-		<li><a href="/">guide 1</a></li>
-		<li><a href="/">guide 2</a></li>
+		{#each guides as guide}
+			<li>
+				<a href={`/guides/${guide.id}`}>{guide.title}</a>
+			</li>
+		{/each}
 	</ul>
 </div>
 
