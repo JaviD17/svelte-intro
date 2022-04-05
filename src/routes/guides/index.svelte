@@ -1,8 +1,9 @@
 <script context="module">
 	export async function load({ fetch }) {
 		// fetch data with context object
-		const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-		const guides = await res.json();
+		// const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+		const res = await fetch('/guides.json');
+		const { guides } = await res.json();
 		// console.log(guides);
 
 		if (res.ok) {
@@ -10,18 +11,18 @@
 				props: {
 					guides: guides
 				}
-			}
+			};
 		}
 
 		return {
 			status: res.status,
 			error: new Error('Could not fetch the guides')
-		}
+		};
 	}
 </script>
 
 <script>
-	export let guides
+	export let guides;
 </script>
 
 <div class="guides">
